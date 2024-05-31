@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <odoo noupdate="1">
 
-  <function model="ir.model.data" name="_update_xmlids">
-    <value model="base" eval="[
-      {'xml_id': 'wms_demo.sch_receive_in_2_steps',
-       'record': obj().env['stock.location.route'].search([('name', '=', 'Schlieren: Receive in 2 steps (input + stock)')], limit=1)[0],
-       'noupdate': True,
-       },
-    ]"/>
-    <value model="base" eval="[
-      {'xml_id': 'wms_demo.wer_receive_in_2_steps',
-       'record': obj().env['stock.location.route'].search([('name', '=', 'Werrikon: Receive in 2 steps (input + stock)')], limit=1)[0],
-       'noupdate': True,
-       },
-    ]"/>
-  </function>
+<!--  <function model="ir.model.data" name="_update_xmlids">-->
+<!--    <value model="base" eval="[-->
+<!--      {'xml_id': 'wms_demo.sch_receive_in_2_steps',-->
+<!--       'record': obj().env['stock.location.route'].search([('name', '=', 'Receive in 2 steps (input + stock)')], limit=1)[0],-->
+<!--       'noupdate': True,-->
+<!--       },-->
+<!--    ]"/>-->
+<!--    <value model="base" eval="[-->
+<!--      {'xml_id': 'wms_demo.wer_receive_in_2_steps',-->
+<!--       'record': obj().env['stock.location.route'].search([('name', '=', 'Receive in 2 steps (input + stock)')], limit=1)[0],-->
+<!--       'noupdate': True,-->
+<!--       },-->
+<!--    ]"/>-->
+<!--  </function>-->
 
   <function model="ir.model.data" name="_update_xmlids">
     <value model="base" eval="[

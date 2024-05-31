@@ -34,4 +34,15 @@
       <field name="route_id" ref="sch_receive_in_2_steps"/>
   </record>
 
+  <record id="wer_input_to_stock" model="stock.rule">
+      <field name="name">SCH: Input → Stock</field>
+      <field name="action">push</field>
+      <field name="auto">manual</field>
+      <field name="location_src_id" ref="stock.stock_location_company"/>
+      <field name="location_id" ref="stock.stock_location_stock"/>
+      <field name="procure_method">make_to_order</field>
+      <field name="picking_type_id" ref="stock_picking_type_put_away"/>
+      <field name="route_id" ref="sch_receive_in_2_steps"/>
+  </record>
+
 </odoo>
